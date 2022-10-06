@@ -1,4 +1,5 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/nothhqba/repositories/nothing/
-    - /bin/cp -R ./ $DEPLOYPATH
+    - export DEPLOYPATH=/home/nothhqba/public_html
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp index.css $DEPLOYPATH
