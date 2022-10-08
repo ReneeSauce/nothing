@@ -13,6 +13,7 @@ header h1 {
 
 .section {
 	width: 75vw;
+	max-width: 500px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -21,4 +22,6 @@ header h1 {
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 1.5em;
+	text-align: center;
 }
