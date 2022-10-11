@@ -1,6 +1,7 @@
 html {
 	background-color: #000;
 	color: #fff;
+	letter-spacing: 1px;
 }
 
 header {
@@ -11,17 +12,32 @@ header h1 {
 	text-align: center;
 }
 
+.poem {
+	max-width: 500px;
+}
+
+.poem div {
+	text-align: center;
+}
+
+.prose {
+	text-align: left;
+}
+
 .section {
 	width: 75vw;
-	max-width: 500px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: auto;	
 }
 
 .section div {
 	width: 75%;
+	padding: 1vw;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 1.5em;
+	border: solid;
+}
+
+.section h2 {
 	text-align: center;
 }
