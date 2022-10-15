@@ -3,3 +3,4 @@ deployment:
     - export DEPLOYPATH=/home/nothhqba/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp index.css $DEPLOYPATH
+    - /bin/cp icon.png $DEPLOYPATH
