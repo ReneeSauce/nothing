@@ -13,11 +13,11 @@ header h1 {
 }
 
 .poem {
-	max-width: 500px;
 }
 
 .poem div {
 	text-align: center;
+	width: 50vw;
 }
 
 .prose {
