@@ -4,3 +4,4 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp icon.png $DEPLOYPATH
     - /bin/cp -R styles $DEPLOYPATH
+    - /bin/cp -R pages $DEPLOYPATH
