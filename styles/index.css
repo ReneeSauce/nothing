@@ -16,15 +16,10 @@ a:hover {
 }
 
 header {
-	display: flex;
 	border-bottom: solid;
 	width: 75vw;
 	margin: auto;
 	align-items: center;
-}
-
-header div {
-	display: inline-block;
 }
 
 #header {
@@ -34,18 +29,26 @@ header div {
 	text-align: center;
 }
 
-.next {
-	text-align: left;
+.flex {
+	display: flex;
+	justify-content: center;
 }
 
-.previous {
+.flex a {
+	margin: 0.5em 1em;
+	font-size: 2em;
+}
+
+.next {
 	text-align: right;
 }
 
 .home {
-	position: fixed;
-	top: 0.5em;
-	left: 8vw;
+	text-align: center;
+}
+
+.previous {
+	text-align: left;
 }
 
 .options {
@@ -104,6 +107,14 @@ header div {
 @media screen and (max-width: 500px) {
 	#header {
 		font-size: 1.25em;
+	}
+
+	.flex a {
+		font-size: 1.25em;
+	}
+
+	.options {
+		/*display: none;*/
 	}
         }
 
