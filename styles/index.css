@@ -126,20 +126,6 @@ header a {
 	margin: auto;
 }
 
-@media screen and (max-width: 500px) {
-	#header {
-		font-size: 1.25em;
-	}
-
-	.flex a {
-		font-size: 1.25em;
-	}
-
-	.options .expand {
-		width: 37.5vw;
-    }
-}
-
 .section a {
 	font-size: 1.5em;
 	font-weight: bold;
@@ -161,8 +147,26 @@ header a {
 #table-of-contents a {
 	width: 75%;
 	margin: 0.5em auto;
-	padding-left: 0.5em;
+	padding-left: 12.5vw;
 	text-align: left;
-	font-size: 1em;
+	font-size: 1.5em;
 	font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+	#header {
+		font-size: 1.25em;
+	}
+
+	.flex a {
+		font-size: 1.25em;
+	}
+
+	.options .expand {
+		width: 37.5vw;
+    }
+
+    #table-of-contents a {
+    	font-size: 1em;
+    }
 }
