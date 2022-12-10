@@ -116,18 +116,18 @@ header a {
 	padding: 1vw;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .poem div {
-	width: 50vw;
+	width: 60vw;
 	text-align: left;
 	padding-left: 30vw;
 	margin: auto;
 }
 
 .section a {
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: bold;
 	text-align: center;
 	border-bottom: solid;
@@ -149,7 +149,7 @@ header a {
 	margin: 0.5em auto;
 	padding-left: 12.5vw;
 	text-align: left;
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 400;
 }
 
@@ -168,5 +168,9 @@ header a {
 
     #table-of-contents a {
     	font-size: 1em;
+    }
+
+    .poem div {
+    	padding-left: 15vw;
     }
 }
