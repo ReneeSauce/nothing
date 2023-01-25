@@ -51,6 +51,7 @@ header a {
 .section {
 	padding: 10px 20px;
 	max-width: 75vw;
+	overflow-wrap: break-word;
 }
 
 .section a {
@@ -63,7 +64,6 @@ header a {
 
 .poem {
 	width: max-content;
-	max-width: 75vw;
 }
 
 .poem div {
