@@ -100,6 +100,10 @@ header a {
 	html {
 		font-size: larger;
 	}
+
+	.section {
+		width: 75vw;
+	}
 	/*
 	#header {
 		font-size: 1.25em;
