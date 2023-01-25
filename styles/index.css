@@ -1,13 +1,22 @@
 html {
 	background-color: #000;
 	color: #fff;
-	letter-spacing: 1.5px;
+	letter-spacing: 0.1rem;
 	scroll-behavior: smooth;
 }
 
-.border-bottom {
-	border-bottom: solid;
+body {
+	max-width: 75vw;
+	margin: auto;
 }
+
+.blob {
+	background-color: #222;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px auto;
+}
+
 
 a {
 	text-decoration: none;
@@ -20,140 +29,75 @@ a:hover {
 }
 
 header {
-	width: 75vw;
-	margin: auto;
+	text-align: center;
 }
 
 header h1 {
-	border-bottom: solid;
 	margin: 5px;
+	letter-spacing: 0.5rem;
+}
+
+header h1 span {
+	letter-spacing: 1rem;
 }
 
 header a {
-	margin: 5px;
-	font-size: 0.5em;
+	font-size: 0.25em;
 	font-weight: 100;
-}
-
-.contents {
-	text-align: center;
-}
-
-#header {
-	margin: auto;
-	font-size: 2em;
-	font-weight: bold;
-	text-align: center;
-}
-
-.flex {
-	display: flex;
-	justify-content: center;
-}
-
-.flex a {
-	margin: 0.5em 1em;
-	font-size: 2em;
-}
-
-.next {
-	text-align: right;
-}
-
-.home {
-	text-align: center;
-}
-
-.previous {
-	text-align: left;
-}
-
-.options {
-	position: fixed;
-	top: 10px;
-	left: 1vw;
-	bottom: 0;
-	width: 12vw;
-	font-size: 1em;
-	text-align: left;
-}
-
-.options a {
-	margin-bottom: 0.5em;
-	padding-right: 0.5em;
-	text-align: right;
-}
-
-.options .expand {
-	background-color: #000;
-	position: fixed;
+	letter-spacing: 0.2rem;
 	width: 25vw;
-	top: 50px;
-	bottom: 0;
-	overflow: scroll;
-	left: -100%;
-	transition: left 1s ease-in-out;
-}
-
-.options:hover .expand {
-	left: 1vw;
-}
-
-.poem {
-}
-
-.prose {
-	text-align: left;
 }
 
 .section {
-	width: 75vw;
-	margin: 0.5em auto;
-	border-bottom: solid;
-}
-
-.section div {
-	padding: 1vw;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 1em;
-}
-
-.poem div {
-	width: 60vw;
-	text-align: left;
-	padding-left: 30vw;
-	margin: auto;
+	padding: 10px 20px;
+	max-width: 75vw;
 }
 
 .section a {
-	font-size: 1em;
-	font-weight: bold;
-	text-align: center;
-	border-bottom: solid;
-	margin: 1em auto;
+	font-size: 1.5em;
 }
 
-.section h2 {
-	text-align: center;
+.section div {
+	padding: 5px 10px;
 }
 
-#table-of-contents {
-	width: 75vw;
-	border-bottom: solid;
+.poem {
+	width: max-content;
+	max-width: 75vw;
+}
+
+.poem div {
+	width: max-content;
 	margin: auto;
 }
 
-#table-of-contents a {
-	width: 75%;
-	margin: 0.5em auto;
-	padding-left: 12.5vw;
-	text-align: left;
-	font-size: 1em;
-	font-weight: 400;
+#contents {
+	width: 37.5vw;
+	margin: auto;
+}
+
+#contents a {
+	width: max-content;
+	max-width: 37.5vw;
+	margin-left: 0px;
+	overflow-wrap: break-word;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 37.5vw;
+}
+
+.nav a {
+	margin: 10px;
+	font-size: 1.5em;
+	width: 10vw;
 }
 
 @media screen and (max-width: 500px) {
+	/*
 	#header {
 		font-size: 1.25em;
 	}
@@ -173,4 +117,5 @@ header a {
     .poem div {
     	padding-left: 15vw;
     }
+    */
 }
