@@ -5,10 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>contents of ˈnʌθɪŋ</title>
 	<link rel="stylesheet" type="text/css" href="../styles/index.css">
-	<link rel="icon" href="../icon.png">
+	<link rel="icon" href="../favicon.ico">
 	<meta name="keywords" content="nothing, nihilism, philosophy, ontology, epistemology, post-modernism"/>
 </head>
-<body>
+<script type="text/javascript">
+		function getTheme() {
+		const theme = localStorage.getItem('theme');
+    	theme && setTheme(theme)
+	}
+
+	function setTheme(theme) {
+		let root = document.querySelector(":root")
+		root.className = theme
+   		localStorage.setItem('theme', theme)
+	}
+</script>
+<body onload="getTheme()">
 	<header>
 		<h1 id="header">table of ˈnʌθɪŋ</h1>
 	</header>

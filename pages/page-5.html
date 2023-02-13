@@ -5,16 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ˈnʌθɪŋ about you</title>
 	<link rel="stylesheet" type="text/css" href="../styles/index.css">
-	<link rel="icon" href="../icon.png">
+	<link rel="icon" href="../favicon.ico">
 	<meta name="keywords" content="nothing, nihilism, philosophy, ontology, epistemology, post-modernism, poetry, love, regret, you, trauma"/>
 </head>
-<body>
+<script type="text/javascript">
+	function getTheme() {
+		const theme = localStorage.getItem('theme');
+    	theme && setTheme(theme)
+	}
+
+	function setTheme(theme) {
+		let root = document.querySelector(":root")
+		root.className = theme
+   		localStorage.setItem('theme', theme)
+	}
+</script>
+<body onload="getTheme()">
 	<header>
 		<h1 id="header">ˈnʌθɪŋ about you</h1>
 		<div class="nav">
-			<div><a href="./page-4.html" class="previous blob">-</a></div>
-			<a href="./contents.html" class="home blob">∅</a>
-			<div><a href="./page-6.html" class="next blob">+</a></div>
+			<a href="./page-4.html" class="previous blob">-</a>
+			<a href="./index.html" class="home blob">∅</a>
+			<a href="./page-6.html" class="next blob">+</a>
 		</div>
 	</header>
 	<div class="poem section blob">

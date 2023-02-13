@@ -1,5 +1,4 @@
-import * as crypto from 'crypto'
-
 export function setTheme(theme) {
-	document.documentElement.className = theme
+	let root = document.querySelector(":root")
+	root.className = theme
 }

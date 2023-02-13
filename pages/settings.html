@@ -3,39 +3,43 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>settings</title>
+	<title>settings of ˈnʌθɪŋ</title>
 	<link rel="stylesheet" type="text/css" href="../styles/index.css">
-	<link rel="icon" href="../icon.png">
+	<link rel="icon" href="../favicon.ico">
 	<meta name="keywords" content="nothing, nihilism, philosophy, ontology, epistemology, post-modernism"/>
 </head>
-<script type="text/javascript" href></script>
-<header>
-		<h1 id="header">settings</h1>
-</header>
-<body>
-	<div class="section blob">select a color scheme</div>
-	<div class="section color-schemes">
-		<button title="dark" class="dark">
-			<div>dark</div>
-		</button>
-		<button title="light" class="light">
-			<div>light</div>
-		</button>
-		<button title="pink" class="pink">
-			<div>pink</div>
-		</button>
-		<button title="festive" class="festive">
-			<div>festive</div>
-		</button>
-		<button title="natural" class="natural">
-			<div>natural</div>
-		</button>
-		<button title="trans" class="trans">
-			<div>trans</div>
-		</button>
-		<button title="trans" class="trans">
-			<div>trans</div>
-		</button>
+<script type="text/javascript">
+	function getTheme() {
+		const theme = localStorage.getItem('theme');
+    	theme && setTheme(theme)
+	}
+
+	function setTheme(theme) {
+		let root = document.querySelector(":root")
+		root.className = theme
+   		localStorage.setItem('theme', theme)
+	}
+</script>
+<body onload="getTheme()">
+	<header>
+		<h1 id="header">settings of ˈnʌθɪŋ</h1>
+	</header>
+	<div class="nav">
+		<a href="../index.html" class="blob">home</a>
+	</div>
+	<h2 class="center">select a color scheme</h2>
+	<div class="colors">
+		<div class="color-opts">
+			<a id="dark" class="blob" onclick="setTheme(this.id)">
+				<div>dark</div>
+			</a>
+			<a id="light" class="blob" onclick="setTheme(this.id)">
+				<div>light</div>
+			</a>
+			<a id="pink" class="blob" onclick="setTheme(this.id)">
+				<div>pink</div>
+			</a>
+		</div>
 	</div>
 </body>
 </html>

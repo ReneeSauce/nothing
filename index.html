@@ -5,14 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ˈnʌθɪŋ</title>
 	<link rel="stylesheet" type="text/css" href="./styles/index.css">
-	<link rel="icon" href="./icon.png">
+	<link rel="icon" href="../favicon.ico">
 	<meta name="keywords" content="nothing, nihilism, philosophy, ontology, epistemology, post-modernism, poetry, essays, nothing about me"/>
 </head>
-<body onclick="void(0)">
+<script type="text/javascript">
+	function getTheme() {
+		const theme = localStorage.getItem('theme');
+    	theme && setTheme(theme)
+	}
+
+	function setTheme(theme) {
+		let root = document.querySelector(":root")
+		root.className = theme
+   		localStorage.setItem('theme', theme)
+	}
+</script>
+<body onload="getTheme()">
 	<header>
 		<h1 id="header"><span>ˈnʌθɪŋ<span><h1>
-		<a href="./pages/contents.html" class="blob">table of contents</a>
-		<!-- <a href="./pages/settings.html" class="blob">settings</a> -->
+		<div class="homeNav"> 
+			<a href="./pages/settings.html" class="blob">settings</a>
+			<!-- <a href="" class="blob">about ˈnʌθɪŋ</a> -->
+			<a href="./pages/index.html" class="blob">table of contents</a>
+		</div>
 	</header>
 	<!--
 	<div class="options">
