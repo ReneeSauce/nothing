@@ -2,7 +2,7 @@
 	:root.dark {
 		--color: #fff;
 		--background-color: #000;
-		--blob-color: #222;
+		--blob-color: #333;
 		--link-color: #999;
 	}
 
@@ -14,9 +14,16 @@
 	}
 
 	:root.pink {
-		--color: #534;
+		--color: #906;
 		--background-color: #fab;
 		--blob-color: #fcd;
+		--link-color: #f0b;
+	}
+
+	:root.darkPink {
+		--color: #fac;
+		--background-color: #301;
+		--blob-color: #634;
 		--link-color: #fef;
 	}
 
@@ -44,6 +51,7 @@ a {
 	text-decoration: none;
 	color: var(--color);
 	display: block;
+	cursor: pointer;
 }
 
 a:hover {
